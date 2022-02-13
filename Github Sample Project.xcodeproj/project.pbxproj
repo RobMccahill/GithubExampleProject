@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E162A81C27B961AA001FF133 /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A81A27B961AA001FF133 /* SearchUsersViewController.swift */; };
+		E162A81D27B961AA001FF133 /* SearchUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162A81B27B961AA001FF133 /* SearchUsersViewController.xib */; };
+		E162A82027B96739001FF133 /* SearchUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A81E27B96739001FF133 /* SearchUserTableViewCell.swift */; };
+		E162A82127B96739001FF133 /* SearchUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162A81F27B96739001FF133 /* SearchUserTableViewCell.xib */; };
+		E162A82327B9691D001FF133 /* SearchedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A82227B9691D001FF133 /* SearchedUser.swift */; };
+		E162A82527B98F08001FF133 /* SearchUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A82427B98F08001FF133 /* SearchUsersViewModel.swift */; };
+		E162A82727B98FDD001FF133 /* UserSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A82627B98FDD001FF133 /* UserSearchService.swift */; };
+		E162A82927B997F3001FF133 /* UserSearchService+SearchViewModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A82827B997F3001FF133 /* UserSearchService+SearchViewModelRepository.swift */; };
+		E162A82E27B99C7C001FF133 /* LoadMoreUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A82C27B99C7C001FF133 /* LoadMoreUsersTableViewCell.swift */; };
+		E162A82F27B99C7C001FF133 /* LoadMoreUsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162A82D27B99C7C001FF133 /* LoadMoreUsersTableViewCell.xib */; };
 		E19E0C2527B8141E004AA22E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E0C2427B8141E004AA22E /* AppDelegate.swift */; };
 		E19E0C2727B8141E004AA22E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E0C2627B8141E004AA22E /* SceneDelegate.swift */; };
 		E19E0C2E27B8141F004AA22E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19E0C2D27B8141F004AA22E /* Assets.xcassets */; };
@@ -16,6 +26,7 @@
 		E19E0C4827B8141F004AA22E /* Github_Sample_ProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E0C4727B8141F004AA22E /* Github_Sample_ProjectUITestsLaunchTests.swift */; };
 		E19E0C5827B8176B004AA22E /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E0C5727B8176B004AA22E /* StartScreenViewController.swift */; };
 		E19E0C5A27B817F0004AA22E /* StartScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19E0C5927B817F0004AA22E /* StartScreenViewController.xib */; };
+		E19E0C5E27B9568C004AA22E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19E0C5D27B9568B004AA22E /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E162A81A27B961AA001FF133 /* SearchUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
+		E162A81B27B961AA001FF133 /* SearchUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUsersViewController.xib; sourceTree = "<group>"; };
+		E162A81E27B96739001FF133 /* SearchUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserTableViewCell.swift; sourceTree = "<group>"; };
+		E162A81F27B96739001FF133 /* SearchUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUserTableViewCell.xib; sourceTree = "<group>"; };
+		E162A82227B9691D001FF133 /* SearchedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedUser.swift; sourceTree = "<group>"; };
+		E162A82427B98F08001FF133 /* SearchUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewModel.swift; sourceTree = "<group>"; };
+		E162A82627B98FDD001FF133 /* UserSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchService.swift; sourceTree = "<group>"; };
+		E162A82827B997F3001FF133 /* UserSearchService+SearchViewModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserSearchService+SearchViewModelRepository.swift"; sourceTree = "<group>"; };
+		E162A82C27B99C7C001FF133 /* LoadMoreUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreUsersTableViewCell.swift; sourceTree = "<group>"; };
+		E162A82D27B99C7C001FF133 /* LoadMoreUsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreUsersTableViewCell.xib; sourceTree = "<group>"; };
 		E19E0C2127B8141E004AA22E /* Github Sample Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Sample Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19E0C2427B8141E004AA22E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19E0C2627B8141E004AA22E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 		E19E0C4727B8141F004AA22E /* Github_Sample_ProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_Sample_ProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E19E0C5727B8176B004AA22E /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		E19E0C5927B817F0004AA22E /* StartScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartScreenViewController.xib; sourceTree = "<group>"; };
+		E19E0C5D27B9568B004AA22E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E162A81927B9618D001FF133 /* SearchUsers */ = {
+			isa = PBXGroup;
+			children = (
+				E162A82427B98F08001FF133 /* SearchUsersViewModel.swift */,
+				E162A81A27B961AA001FF133 /* SearchUsersViewController.swift */,
+				E162A81B27B961AA001FF133 /* SearchUsersViewController.xib */,
+				E162A81E27B96739001FF133 /* SearchUserTableViewCell.swift */,
+				E162A81F27B96739001FF133 /* SearchUserTableViewCell.xib */,
+				E162A82C27B99C7C001FF133 /* LoadMoreUsersTableViewCell.swift */,
+				E162A82D27B99C7C001FF133 /* LoadMoreUsersTableViewCell.xib */,
+			);
+			path = SearchUsers;
+			sourceTree = "<group>";
+		};
 		E19E0C1827B8141E004AA22E = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +137,7 @@
 			children = (
 				E19E0C2427B8141E004AA22E /* AppDelegate.swift */,
 				E19E0C2627B8141E004AA22E /* SceneDelegate.swift */,
+				E19E0C5D27B9568B004AA22E /* AppCoordinator.swift */,
 				E19E0C5427B816C9004AA22E /* Models */,
 				E19E0C5527B816D4004AA22E /* UI */,
 				E19E0C2D27B8141F004AA22E /* Assets.xcassets */,
@@ -130,6 +167,9 @@
 		E19E0C5427B816C9004AA22E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E162A82227B9691D001FF133 /* SearchedUser.swift */,
+				E162A82627B98FDD001FF133 /* UserSearchService.swift */,
+				E162A82827B997F3001FF133 /* UserSearchService+SearchViewModelRepository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E19E0C5627B81737004AA22E /* StartScreen */,
+				E162A81927B9618D001FF133 /* SearchUsers */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -256,8 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19E0C3127B8141F004AA22E /* LaunchScreen.storyboard in Resources */,
+				E162A81D27B961AA001FF133 /* SearchUsersViewController.xib in Resources */,
+				E162A82127B96739001FF133 /* SearchUserTableViewCell.xib in Resources */,
 				E19E0C2E27B8141F004AA22E /* Assets.xcassets in Resources */,
 				E19E0C5A27B817F0004AA22E /* StartScreenViewController.xib in Resources */,
+				E162A82F27B99C7C001FF133 /* LoadMoreUsersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +326,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E162A82027B96739001FF133 /* SearchUserTableViewCell.swift in Sources */,
+				E162A82527B98F08001FF133 /* SearchUsersViewModel.swift in Sources */,
+				E19E0C5E27B9568C004AA22E /* AppCoordinator.swift in Sources */,
+				E162A82727B98FDD001FF133 /* UserSearchService.swift in Sources */,
 				E19E0C2527B8141E004AA22E /* AppDelegate.swift in Sources */,
 				E19E0C2727B8141E004AA22E /* SceneDelegate.swift in Sources */,
+				E162A81C27B961AA001FF133 /* SearchUsersViewController.swift in Sources */,
+				E162A82327B9691D001FF133 /* SearchedUser.swift in Sources */,
 				E19E0C5827B8176B004AA22E /* StartScreenViewController.swift in Sources */,
+				E162A82E27B99C7C001FF133 /* LoadMoreUsersTableViewCell.swift in Sources */,
+				E162A82927B997F3001FF133 /* UserSearchService+SearchViewModelRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

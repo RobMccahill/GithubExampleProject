@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7Y-4B-aqY">
-                                <rect key="frame" x="52" y="434.5" width="310.5" height="65.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7Y-4B-aqY">
+                                <rect key="frame" x="52" y="420.5" width="310.5" height="65.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github Example Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2q-QY-NTc">
                                         <rect key="frame" x="0.0" y="0.0" width="310.5" height="37"/>
@@ -36,6 +36,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L7Y-4B-aqY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OVT-Rm-e1O"/>
+                            <constraint firstItem="L7Y-4B-aqY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vWl-fp-gl5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
