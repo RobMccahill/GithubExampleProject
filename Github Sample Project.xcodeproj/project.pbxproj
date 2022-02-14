@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1166F2127BAFAD200D374B6 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1166F2027BAFAD200D374B6 /* ImageCache.swift */; };
 		E162A81C27B961AA001FF133 /* SearchUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A81A27B961AA001FF133 /* SearchUsersViewController.swift */; };
 		E162A81D27B961AA001FF133 /* SearchUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E162A81B27B961AA001FF133 /* SearchUsersViewController.xib */; };
 		E162A82027B96739001FF133 /* SearchUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162A81E27B96739001FF133 /* SearchUserTableViewCell.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1166F2027BAFAD200D374B6 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		E162A81A27B961AA001FF133 /* SearchUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersViewController.swift; sourceTree = "<group>"; };
 		E162A81B27B961AA001FF133 /* SearchUsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchUsersViewController.xib; sourceTree = "<group>"; };
 		E162A81E27B96739001FF133 /* SearchUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserTableViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1166F1F27BAFABC00D374B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E1166F2027BAFAD200D374B6 /* ImageCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		E162A81927B9618D001FF133 /* SearchUsers */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 				E19E0C5D27B9568B004AA22E /* AppCoordinator.swift */,
 				E19E0C5427B816C9004AA22E /* Models */,
 				E19E0C5527B816D4004AA22E /* UI */,
+				E1166F1F27BAFABC00D374B6 /* Utils */,
 				E19E0C2D27B8141F004AA22E /* Assets.xcassets */,
 				E19E0C2F27B8141F004AA22E /* LaunchScreen.storyboard */,
 				E19E0C3227B8141F004AA22E /* Info.plist */,
@@ -332,6 +343,7 @@
 				E162A82727B98FDD001FF133 /* UserSearchService.swift in Sources */,
 				E19E0C2527B8141E004AA22E /* AppDelegate.swift in Sources */,
 				E19E0C2727B8141E004AA22E /* SceneDelegate.swift in Sources */,
+				E1166F2127BAFAD200D374B6 /* ImageCache.swift in Sources */,
 				E162A81C27B961AA001FF133 /* SearchUsersViewController.swift in Sources */,
 				E162A82327B9691D001FF133 /* SearchedUser.swift in Sources */,
 				E19E0C5827B8176B004AA22E /* StartScreenViewController.swift in Sources */,

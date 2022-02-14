@@ -23,6 +23,7 @@ class SearchUsersViewController: UIViewController {
     private let userCellReuseIdentifier = "searchUserCell"
     private let loadMoreCellsReuseIdentifier = "loadMoreCell"
     private lazy var dataSource = makeDataSource()
+    private let imageCache = ImageCache()
     var viewModel: SearchUsersViewModel!
     
     override func viewDidLoad() {
@@ -33,7 +34,9 @@ class SearchUsersViewController: UIViewController {
         configureTableView()
         
         searchBar.delegate = self
-        viewModel.stateListener = updateState
+        viewModel.stateListener = { [weak self] searchState in
+            self?.updateState(searchState)
+        }
     }
     
     private func configureActivityIndicator() {
@@ -61,14 +64,16 @@ class SearchUsersViewController: UIViewController {
     private func makeDataSource() -> UITableViewDiffableDataSource<Int, SearchUsersViewModel.UserItem> {
         UITableViewDiffableDataSource<Int, SearchUsersViewModel.UserItem>(
             tableView: usersTableView,
-            cellProvider: { tableView, indexPath, item in
+            cellProvider: { [weak self] tableView, indexPath, item in
+                guard let self = self else { return nil }
+                
                 switch item {
                 case .user(let user):
                     let cell = tableView.dequeueReusableCell(
                         withIdentifier: self.userCellReuseIdentifier,
                         for: indexPath
                     ) as? SearchUserTableViewCell
-                    cell?.configure(with: user)
+                    cell?.configure(with: user, imageCache: self.imageCache)
                     return cell
                 case .loadMoreUsers(let count):
                     let cell = tableView.dequeueReusableCell(

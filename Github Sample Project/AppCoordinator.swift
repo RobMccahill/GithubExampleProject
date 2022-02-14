@@ -40,7 +40,9 @@ class AppCoordinator {
         )
         
         let eventHandler = StartScreenViewController.EventHandler(
-            searchUsersTapped: searchUsersTapped,
+            searchUsersTapped: { [weak self] in
+                self?.searchUsersTapped()
+            },
             //todo: Hook up when repositories screen is built
             searchRepositoriesTapped: {}
         )
